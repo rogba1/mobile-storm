@@ -58,8 +58,7 @@ private static String url;
  			// Getting Array of forecasts
  			forecastArray = json.getJSONArray("three_hourly_forecasts");
 			
-// 			"":"Wednesday","local_hour":" 3am","":"4.3","":"S","swell_direction_degrees":"184","swell_period_seconds":"9","wind_speed_knots":"27.3","wind_direction_compass_point":"SSW","":"203"}
-			// looping through All locations
+
 			for(int i = 0; i < forecastArray.length(); i++){
 				JSONObject c = forecastArray.getJSONObject(i);
 
